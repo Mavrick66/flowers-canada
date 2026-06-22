@@ -128,13 +128,29 @@ href="{{ url_for('static', filename='logo.png') }}">
 
             <div class="hero-image">
 
-                <img
-src="{{ url_for('static', filename='images/herorose.jpg') }}"
-alt="Букет">
+    <div class="hero-slider">
 
-            </div>
+        <img class="slide active"
+        src="{{ url_for('static', filename='images/herorose.jpg') }}">
 
+        <img class="slide"
+        src="{{ url_for('static', filename='images/herorose2.jpg') }}">
+
+        <img class="slide"
+        src="{{ url_for('static', filename='images/herorose3.jpg') }}">
+
+        <button class="slider-btn prev">❮</button>
+        <button class="slider-btn next">❯</button>
+
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </div>
+
+    </div>
+
+</div>
 
     </div>
 
