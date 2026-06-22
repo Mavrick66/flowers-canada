@@ -20,7 +20,7 @@ href="{{ url_for('static', filename='logo.png') }}">
 
 </head>
 
-<body>
+<body id="top">
 
 <div class="cart" id="cart">
 
@@ -46,13 +46,13 @@ href="{{ url_for('static', filename='logo.png') }}">
 
     <div class="container nav">
 
-        <div class="logo">
+        <a href="#top" class="logo">
 
-            <img src="{{ url_for('static', filename='logo.png') }}" alt="Логотип">
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Логотип">
 
-            <span>Цветы Канады</span>
+    <span>Цветы Канады</span>
 
-        </div>
+</a>
 
         <nav>
 
@@ -128,29 +128,13 @@ href="{{ url_for('static', filename='logo.png') }}">
 
             <div class="hero-image">
 
-    <div class="hero-slider">
+                <img
+src="{{ url_for('static', filename='images/herorose.jpg') }}"
+alt="Букет">
 
-        <img class="slide active"
-        src="{{ url_for('static', filename='images/herorose.jpg') }}">
+            </div>
 
-        <img class="slide"
-        src="{{ url_for('static', filename='images/herorose2.jpg') }}">
-
-        <img class="slide"
-        src="{{ url_for('static', filename='images/herorose3.jpg') }}">
-
-        <button class="slider-btn prev">❮</button>
-        <button class="slider-btn next">❯</button>
-
-        <div class="slider-dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
         </div>
-
-    </div>
-
-</div>
 
     </div>
 
@@ -543,7 +527,6 @@ href="{{ url_for('static', filename='logo.png') }}">
 </div>
 
 <script src="{{ url_for('static', filename='main.js') }}"></script>
-<div class="modal" id="orderModal">
 
     <div class="modal-content">
 
@@ -571,4 +554,7 @@ href="{{ url_for('static', filename='logo.png') }}">
 </div>
 </html>
 
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+
 </body>
+</html>
